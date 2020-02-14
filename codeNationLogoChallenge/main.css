@@ -1,0 +1,40 @@
+body{
+    height: 100vh;
+    display: flex;
+}
+
+.main-website-position{
+    position: absolute;
+    left: 515px;
+    top: 100px;
+}
+
+.twitter-position{
+    position: absolute;
+    left: 200px;
+    top: 300px;
+}
+
+.facebook-position{
+    position: absolute;
+    left: 820px;
+    top: 350px;
+}
+
+.instagram-position{
+    position: absolute;
+    left: 1600px;
+    top: 350px;
+}
+
+div{
+    padding: 10px;
+}
+
+.main-movement{
+    transform: rotate(360deg);
+}
+
+.main-movement:hover{
+    transform:rotate(360deg)
+}
