@@ -20,7 +20,7 @@ class Cars {
 }
 
 class Staff extends Cars{
-    constructor(reg, staffNumber, creditsRemaining){
+    constructor(reg, staffNumber, ){
         super(reg);
         this._staffNumber = staffNumber;
         this._takenHours = 0;
@@ -37,17 +37,22 @@ class Staff extends Cars{
     }
 
     decreaseCredits(){
-        this._takenHours++;
+        this._takenHours = this._takenHours + 1;
         this._creditsRemaining -= 1.50
     }
 }
 
+// const matthew = new Staff(545353,101,);
+// matthew.decreaseCredits();
+// console.log(matthew.creditsRemaining);
+// console.log(matthew.takenHours);
+
 const credits = (reg, time) => {
     const staff = new Staff (reg);
     for ( i = 0; i < time; i++){
-        staff.decreaseCredits
+        staff.decreaseCredits();
     }
-    console.log(`Welcome staff member ${reg}. You have ${staff.creditsRemaining}`)
+    console.log(`Welcome staff member ${reg}. You have ${staff.creditsRemaining} remaining`)
 }
 
 const pay = (reg, hrs) => {
